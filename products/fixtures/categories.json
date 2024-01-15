@@ -1,0 +1,58 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "shoes",
+        "friendly_name": "Shoes"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "pants",
+        "friendly_name": "Pants"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "shirts",
+        "friendly_name": "Shirts"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "jackets",
+        "friendly_name": "Jackets"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "accessories",
+        "friendly_name": "Accessories"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    }
+  ]
