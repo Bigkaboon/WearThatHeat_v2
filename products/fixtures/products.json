@@ -6,11 +6,53 @@
         "sku": "pp5001340155",
         "name": "Stone Island Sweatter",
         "description": "A soft, stylish sweat shirt made of quality cotton. Brand new condition, not used once",
+        "size": "Medium",
         "price": 53.99,
-        "category": 6,
-        "rating": 4.6,
+        "category": 3,
         "image_url": "/workspaces/WearThatHeat_v2/media/IMG_8079.JPG",
         "image": "IMG_8079.JPG"
       }
-    }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+          "sku": "sa8003340235",
+          "name": "C.P Company Hat",
+          "description": "A white cotton hat, perfect for winter time.",
+          "size": "One-Size",
+          "price": 59.99,
+          "category": 6,
+          "image_url": "/workspaces/WearThatHeat_v2/media/IMG_8093.JPG",
+          "image": "IMG_8093.JPG"
+        }
+      },
+      {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+          "sku": "bb8233370222",
+          "name": "Stone Island Sweatter",
+          "description": "A black Stone Island sweatter made out of cotton.",
+          "size": "Large",
+          "price": 59.99,
+          "category": 3,
+          "image_url": "/workspaces/WearThatHeat_v2/media/IMG_8088.JPG",
+          "image": "IMG_8088.JPG"
+        }
+      },
+      {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+          "sku": "cb3213345235",
+          "name": "Stone Island Hoodie",
+          "description": "Stone Island Hoodie, Jeans themed made out of cotton, in new condition and perfect for spring and summer time",
+          "size": "X-Large",
+          "price": 79.99,
+          "category": 3,
+          "image_url": "/workspaces/WearThatHeat_v2/media/IMG_8096.JPG",
+          "image": "IMG_8096.JPG"
+        }
+      }
 ]

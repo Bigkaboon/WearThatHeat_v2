@@ -10,8 +10,6 @@ body {
     font-family: 'Lato';
 }
 
-
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -93,10 +91,6 @@ body {
     z-index: -1;
 }
 
-
-
-
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -118,5 +112,15 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+@media (min-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
