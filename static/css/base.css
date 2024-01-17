@@ -91,6 +91,11 @@ body {
     z-index: -1;
 }
 
+.card > a > img {
+    width: 200px;
+    height: 220px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
