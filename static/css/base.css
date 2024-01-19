@@ -96,6 +96,16 @@ body {
     height: 220px;
 }
 
+#set-card-width > .card {
+    max-width: 200px;
+}
+
+.new-in-overlay {
+    background: white;
+    bottom: 0;
+    max-height: 60vh;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
