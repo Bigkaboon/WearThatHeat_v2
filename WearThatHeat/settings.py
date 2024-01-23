@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-lsjg&wb!r(d_%-+_h)2eqvrzb*cecj7klh2y_&m0(5ttio$(+#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheat-v-26mpo1v4lb.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheatv-2lc4ekie8wh.ws-eu107.gitpod.io']
 
 
 # Application definition
