@@ -99,7 +99,7 @@ def add_product(request):
 @login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
-    if not request.use.is_superuse:
+    if not request.user.is_superuser:
         message.error(request, 'Sorry only store owner can do that!')
         return redirect(reverse('home'))
 
