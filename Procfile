@@ -1,1 +1,1 @@
-web: gunicorn config.wsgi:application
+web: gunicorn WearThatHeat_v2.wsgi:application
