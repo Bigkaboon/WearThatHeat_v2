@@ -1,0 +1,1 @@
+web: gunicorn wearthatheat_v2.wsgi:application
