@@ -1,1 +1,1 @@
-web: gunicorn wearthatheat_v2.wsgi:application
+web: gunicorn wear-that-heat.wsgi:application
