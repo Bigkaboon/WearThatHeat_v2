@@ -48,7 +48,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black rounded-0 hide" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -140,8 +140,13 @@
     {% endblock %}
 
     <footer>
-        <a href="https://www.facebook.com/profile.php?id=61556298952068" target="_blank" class="icon"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/wearthatheat/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <span>
+            <a href="https://www.facebook.com/profile.php?id=61556298952068" target="_blank" class="icon"><i class="fa-brands fa-facebook"></i> FaceBook</a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/wearthatheat/" target="_blank"><i class="fa-brands fa-instagram"></i>    instagram</a>
+            
+        </span>
     </footer>
   </body>
 </html>

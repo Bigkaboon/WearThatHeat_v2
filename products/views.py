@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+
 from .models import Product, Category
 from .forms import ProductForm
 
@@ -127,7 +128,7 @@ def edit_product(request, product_id):
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
-    if not request.use.is_superuser:
+    if not request.user.is_superuser:
         message.error(request, 'Sorry only store owner can do that!')
         return redirect(reverse('home'))
 

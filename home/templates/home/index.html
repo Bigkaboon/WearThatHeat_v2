@@ -15,16 +15,22 @@
             <div style="margin-left: auto;margin-right: auto;margin-top: 15llrem;" class="">
                 <div class="my-5">
                     <h4 >
-                        <a href="{% url 'products' %}" id="edit-shopNowBtn" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}" id="edit-shopNowBtn" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row" style="background-color: white;">
+
+    <div class="row display-new-items">
+        <div class="col-12">
+            <div class="new-in-header">
+                <h5>New Arrivals:</h5>
+            </div>
+        </div>
         {% for product in new_arrivals %}
-        <div id="set-card-width" class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-            <div class="card h-100 border-0">
+        <div id="set-card-width" class="col-sm-6 col-md-6 col-lg-4 col-xl-3 card-style">
+            <div class="card h-100 border-1">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -37,7 +43,7 @@
                 <div class="card-body pb-0">
                     <p class="mb-0">{{ product.name }}</p>
                 </div>
-                <div class="card-footer bg-white pt-0 border-0 text-left">
+                <div class="card-footer bg-l pt-0 border-0 text-left">
                     <div class="row">
                         <div class="col">
                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
