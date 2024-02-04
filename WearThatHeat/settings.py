@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheatv-2lc4ekie8wh.ws-eu107.gitpod.io', 'wear-that-heat-c81d8db45882.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheatv-2lc4ekie8wh.ws-eu108.gitpod.io', 'wear-that-heat-c81d8db45882.herokuapp.com', 'localhost']
 
 
 # Application definition
