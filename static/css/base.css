@@ -281,9 +281,13 @@ set-border {
 
 }
 
+.pagination-arrows {
+    color: #d05323;
+}
 
-
-
+.pagination-arrows:hover {
+    color: #555;
+}
 
 /* ------------------- Footer */
 
