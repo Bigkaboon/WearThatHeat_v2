@@ -212,7 +212,7 @@ body {
     background-color: white;
     margin-bottom: 6rem;
     padding: 1rem;
-    border: 0.2rem solid black;
+    border: 0.1rem solid black;
     display: flex;
     justify-content: space-evenly;
 
@@ -258,6 +258,17 @@ set-border {
 .dropdown-menu {
     border: 0.5rem double rgba(60, 60, 60, 0.3);
 }
+
+.pagination {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+
 
 
 
@@ -331,6 +342,7 @@ footer > span {
 
 
 
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -353,11 +365,28 @@ footer > span {
         box-shadow: 2px 2px 7px 3px rgba(208,83,35, 0.5);
     }
 
+    .login > input {
+        box-shadow: 2px 2px 7px 3px rgba(208,83,35, 0.5) !important;
+    }
+
 }
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
+
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    
+    .header-container {
+        padding-top: 164px;
+    }
+    
 
     body {
         height: calc(100vh - 116px);
@@ -397,5 +426,8 @@ footer > span {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+    .new-in-header {
+        width: 40%;
     }
 }

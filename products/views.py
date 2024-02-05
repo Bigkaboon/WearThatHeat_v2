@@ -30,11 +30,13 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
+                unique_products = set(list(products))
+                products = list(unique_products)
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+                products = products.order_by(sortkey)
             
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
@@ -51,8 +53,10 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    unique_products = set(list(products))
-    products = list(unique_products)
+
+    
+
+
     context = {
         'products': products,
         'search_term': query,
@@ -61,7 +65,6 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
-
 
 def product_detail(request, product_id):
     """ A view to show individual product details """

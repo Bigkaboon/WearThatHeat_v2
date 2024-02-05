@@ -9,6 +9,7 @@
     </div>
 {% endblock %}
 
+
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
@@ -28,8 +29,8 @@
                 <h5>New Arrivals:</h5>
             </div>
         </div>
-        {% for product in new_arrivals %}
-        <div id="set-card-width" class="col-sm-6 col-md-6 col-lg-4 col-xl-3 card-style">
+        {% for product in page_obj %}
+        <div id="set-card-width" class="col-sm-6 col-md-6 col-lg-4 col-xl-3 shadow-orange">
             <div class="card h-100 border-1">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
@@ -73,5 +74,21 @@
             </div>
         {% endif %}
     {% endfor %}
+    <div class="pagination col-12">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}"><i class="fa-solid fa-arrow-left"></i> Previous </a>
+            {% endif %}
+    
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+    
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}"> next <i class="fa-solid fa-arrow-right"></i></a>
+            {% endif %}
+        </span>
+    </div>
+
     </div>
 {% endblock %}
