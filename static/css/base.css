@@ -256,7 +256,7 @@ set-border {
 }
 
 .dropdown-menu {
-    border: 0.5rem double rgba(60, 60, 60, 0.3);
+    border: 0.5rem double rgba(60, 60, 60, 1);
 }
 
 .pagination {
@@ -327,7 +327,13 @@ footer > span {
   .container {
     max-width: 80%;
   }
+
 }
+
+@media (max-width: 1200px) {
+
+}
+  
 
 .btn-file {
     position: relative;
