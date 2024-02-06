@@ -1,6 +1,6 @@
 
 body {
-    background: url('../images/IMG_8078123123.JPG') no-repeat center center fixed;
+    background: url('https://res.cloudinary.com/dqjrogx2f/image/upload/v1707222991/static/images/IMG_8078123123.0c33d1c09dd7.webp') no-repeat center center fixed;
     background-size: 50%;
     height: calc(100vh - 164px);
     color: #555;
@@ -86,7 +86,7 @@ body {
 }
 
 #wth-text {
-    background: url('../images/IMG_8078(TEXT).JPG') no-repeat center;
+    background: url('https://res.cloudinary.com/dqjrogx2f/image/upload/v1707234833/static/images/IMG_8078_TEXT_pqlrzd.jpg') no-repeat center;
     background-size: 55%;
     max-height: 164px;
     min-height:  60px;
@@ -357,9 +357,6 @@ footer > span {
 
 
 
-
-
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -482,10 +479,6 @@ footer > span {
 @media (max-width: 450px) {
     .list-inline-item > a {
         font-size: 0.60rem;
-    }
-
-    #edit-shopNowBtn {
-
     }
 
     .display-new-items {
