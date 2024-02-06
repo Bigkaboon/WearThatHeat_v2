@@ -1,6 +1,6 @@
 
 body {
-    background: url('static/images/IMG_8078123123.JPG') no-repeat center center fixed;
+    background: url('../images/IMG_8078123123.JPG') no-repeat center center fixed;
     background-size: 50%;
     height: calc(100vh - 164px);
     color: #555;
@@ -86,7 +86,7 @@ body {
 }
 
 #wth-text {
-    background: url('static/images/IMG_8078(TEXT).JPG') no-repeat center;
+    background: url('../images/IMG_8078(TEXT).JPG') no-repeat center;
     background-size: 55%;
     max-height: 164px;
     min-height:  60px;
