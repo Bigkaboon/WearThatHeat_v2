@@ -1,39 +1,120 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WearThatHeat
 
-Welcome,
+Are you looking for a Swedish based marketplace where you can buy authentic cloths from a great variation of popular brands, WearThatHeat is the place for you. In first sight you see all the new arrived products displayed on the homepage that you can with ease select and take a closer look to then decide if you would like to buy. Besides that, you as a user can browse between all the different clothing in one single tab. To make it easier for users to find the product they are looking for I have implemented several ways to sort products. For the purpose of finding something they know are in stock users can use the searchbar at the top, other sorting methods like price or a specific type of clothing exists aswell. WearThatHeat is even more friendly when it comes to administration, more info regarding that further down.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features:
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+WearThatHeat has many cool features that provides a good UX. Down below I will show you a few of the user stories used and then screenshots on how they are implemented.
+	
+* Products
+    * As a Shopper I can Easily see what I've searched for and the number of results so that Quickly decide wether the product I want is available
+    ![Searchbar](/media/readme-images/searchbar.png)
 
-## Codeanywhere Reminders
+    * As a Shopper I can view individual products so that I can show information about the product I might buy
+    ![Product Details](media/readme-images/product_details.png)
+    
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+    * As a Shopper I can Quickly identify deals, clearance and special offers so that Take advantage of special savings on products i'd like to purchase
+    ![Identify Deals](media/readme-images/identify_deals.png)
+    
+* User Authentication
+    * As a Site user I can Easily register for an account so that Have a personal account and be able to view my profile
+    ![Register](media/readme-images/signup.png)
 
-`python3 -m http.server`
+    * As a Site user I can Easily login and logout so that Access my   personal account informationj
+    Log In: ![Log In](media/readme-images/login.png)
+    Log Out: ![Log Out](media/readme-images/logout.png)
+* Bag
+    * As a Site user I can Show my bag so that decide which products I want to buy
+    ![Shopping bag](media/readme-images/bag.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+    * As a Site user I can get notified when I add something to the bag so I in a user friendly way can verify that the product got added to the bag
+    ![Shopping bag Notification](media/readme-images/notis-bag.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* Checkout
+    * As a Site user I can pay for the products so that I can get an order of the products I want
+    ![Checkout Page](media/readme-images/chekout.png)
+* Admin
+    * As a Site admin I can Easily add new products so that I can update stock
+    ![Product Management Page](media/readme-images/product_management.png)
 
-`http_server`
+    * As a Site admin I can Easily edit products so that I can edit stock
+    ![Product Delete Button](media/readme-images/delete-p.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    * As a Site admin I can Easily delete products so that I can edit stock
+    ![Edit Product Page](media/readme-images/edit-p.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+More Features:
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Navbar
+    ![Navigation menue](media/readme-images/nav-bar.png)
 
-To log into the Heroku toolbelt CLI:
+* Pagination
+    ![Pagigation menue](media/readme-images/pagination.png)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+##  Features Left to Implement:
+* News Letter - A cool feature to add would be to make it possible for the users to sign up for a news letter so that they can get updated each time the stock gets a major update.
+* FAQ - A FAQ would be good since questions and misundestandings are very common. An FAQ would be a good way to handle them
+* Swish - Swish is a Swedish payment system which is relativly easy to implement with API. This makes it very easy for users to pay from their phone. It is a wellknown app used in Sweden and very trustworthy.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Technologies Used:
 
----
+### Languages:
 
-Happy coding!
+* HTML  
+* CSS
+* Python 
+* JavaScript
+
+### Frameworks and Softwear:
+
+* Github
+* Bootstrap
+* Django
+* Gitpod
+* Balsamiq
+* Heroku
+* Google Chrome DevTools
+* Cloudinary
+
+## Validators:
+
+* Autopep8
+    ![Autopep8 Screenshot of validation](media/readme-images/autopep8-python-validation.png)
+
+## Manual Testing:
+* Using - I have used the site, tried every feature multiple times to make sure everything works as it should without problems.
+
+* Friends and Family - I have asked friends and family to try it out aswell and asked for feedback. Functionality wise they found that categories was not displayed properly and that is now fixed.
+
+
+## Unfixed Bugs:
+* Confirmation Emails - Since I used the same version of Django as in the walkthrough (Django > 4) Email functionality don’t seem to be supported. I spent hours trying to migrate/update the version of Django but because that resulted in new errors and problems I left it as an unfixed bug. I also contacted Student Care regarding this and did not get a clear answer on how to handle this.
+
+## Deployment: 
+
+Sign up or log in to Heroku. On the dashboard, click "New" and choose "Create new app." Give it a unique name, pick the closest region, then click "Create app."
+
+For a Heroku-accessible database, sign up or log in to ElephantSQL. Click "Create New Instance," set up the "Tiny Turtle (free)" plan with a name, select a nearby region, and click "Review" and then "Create instance."
+
+Copy the database URL from the ElephantSQL dashboard under your project's instance name.
+
+In the terminal, install dj-database-url and psycopg2-binary. Run "pip3 freeze > requirements.txt" to update the requirements file.
+
+Create a Procfile in the root directory with "web: gunicorn yourapp.wsgi:application."
+
+Migrate the database structure to ElephantSQL: "python manage.py migrate."
+
+Create a superuser with "python3 manage.py createsuperuser."
+
+Load .json files for categories and items.
+
+Install gunicorn with "pip install gunicorn" and add it to requirements.txt: "pip3 freeze > requirements.txt."
+
+Add Heroku app and localhost to ALLOWED_HOSTS: "ALLOWED_HOSTS = ['HEROKU_APP_NAME.herokuapp.com', 'localhost']."
+
+Connect Heroku to GitHub for automatic deploys.
+
+Deploy the app and access the website.
+
+## Credits
