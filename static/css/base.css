@@ -96,6 +96,7 @@ body {
     border-radius: 10px;
     
 }
+
 #edit-shopNowBtn {
     margin-top: 35rem;
 }
@@ -408,15 +409,9 @@ footer > span {
         height: calc(100vh - 116px);
         background-size: 100%;
     }
-    /* body {
-    background: url(/media/IMG_8078123123.JPG) no-repeat center center fixed;
-    background-size: 50%;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
-    height: 100%; */
+
     #edit-shopNowBtn {
-        margin-top: 32rem;
+        margin-top: 20rem;
         background-color: #d05323;
         border: 2px solid black;
     }
