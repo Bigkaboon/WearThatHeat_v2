@@ -133,3 +133,17 @@ Connect Heroku to GitHub for automatic deploys.
 Deploy the app and access the website.
 
 ## Credits
+
+### Content
+
+* Code Institute Walk through project Boutique ado
+* Stack OverFlow
+* A few youtube videos regarding django and e-commerce (No links available)
+* Some style tricks from my instagram feed
+
+### Images
+* All the images, background, logo and all the product images are from my dear friend Wiktor who is the owner of WearThatHeat that also gave me permission to do this project in the way I did.
+
+### A Great Thanks!
+
+* My Mentor Antonio and Tutor support who got my back when I needed some extra guidance
