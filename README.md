@@ -108,29 +108,20 @@ More Features:
 
 ## Deployment: 
 
-Sign up or log in to Heroku. On the dashboard, click "New" and choose "Create new app." Give it a unique name, pick the closest region, then click "Create app."
-
-For a Heroku-accessible database, sign up or log in to ElephantSQL. Click "Create New Instance," set up the "Tiny Turtle (free)" plan with a name, select a nearby region, and click "Review" and then "Create instance."
-
-Copy the database URL from the ElephantSQL dashboard under your project's instance name.
-
-In the terminal, install dj-database-url and psycopg2-binary. Run "pip3 freeze > requirements.txt" to update the requirements file.
-
-Create a Procfile in the root directory with "web: gunicorn yourapp.wsgi:application."
-
-Migrate the database structure to ElephantSQL: "python manage.py migrate."
-
-Create a superuser with "python3 manage.py createsuperuser."
-
-Load .json files for categories and items.
-
-Install gunicorn with "pip install gunicorn" and add it to requirements.txt: "pip3 freeze > requirements.txt."
-
-Add Heroku app and localhost to ALLOWED_HOSTS: "ALLOWED_HOSTS = ['HEROKU_APP_NAME.herokuapp.com', 'localhost']."
-
-Connect Heroku to GitHub for automatic deploys.
-
-Deploy the app and access the website.
+1. Once logged in on heroku, navigate to the dashboard.
+2. Find the button that says "New", click that and then "Create new app".
+3. Go to ElephantSQL and log in.
+4. Click "Create New Instance".
+5. Select  "Tiny Turtle (free)" and the Region as near you as possible.
+6. Click "Review", "Create Instance" and return to the dashboard.
+7. Open the instance and copy the url.
+8. Install the plugins dj-database-url and psycopg2-binary in terminal and freeze requirements.txt.
+9. add "web: gunicorn yourapp.wsgi:application" to your Procfile and migrate(python3 manage.py migrate).
+10. Create a superuser to access Admin(python3 manage.py createsuperuser).
+11. Load any .json files.
+12. Install gunicorn and freeze.
+13. Add the deployed url to you ALLOWED_HOSTS in settings.py.
+14. When connected Heroku to GitHub, choose automatic deploys and deploy app.
 
 ## Credits
 
