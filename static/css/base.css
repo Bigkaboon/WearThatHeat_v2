@@ -390,12 +390,6 @@ footer > span {
     .center-container {
         margin-top: 3rem;
     }
-
-    .message-container {
-        margin-top: 10rem;
-    }
-    
-
 }
 @media (max-width: 991px) {
     .header-container {
@@ -409,11 +403,6 @@ footer > span {
         left: 0;
         z-index: 1030;
     }
-    
-    .header-container {
-        padding-top: 164px;
-    }
-    
 
     body {
         height: calc(100vh - 116px);
