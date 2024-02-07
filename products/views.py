@@ -24,6 +24,7 @@ def all_products(request):
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
+            products = products.order_by(sortkey)
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
@@ -36,7 +37,7 @@ def all_products(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+
             
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
