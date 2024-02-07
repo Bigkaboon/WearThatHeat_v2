@@ -79,8 +79,18 @@ More Features:
 
 ## Validators:
 
-* Autopep8
-    ![Autopep8 Screenshot of validation](media/readme-images/autopep8-python-validation.png)
+* Python - Autopep8
+    ![Autopep8 Screenshot of validation - Python](media/readme-images/autopep8-python-validation.png)
+
+* CSS - W3C
+    ![W3C Screenshot of validation - CSS](media/readme-images/css-validator.png)
+
+* HTML - W3C
+    ![W3 Screenshot of validation - HTMl](media/readme-images/html-validator.png)
+
+* JavaScript - JSHint
+    ![JSHint Screenshot of validation - JavaScript](media/readme-images/jshint-validator.png)
+
 
 ## Manual Testing:
 * Using - I have used the site, tried every feature multiple times to make sure everything works as it should without problems.
@@ -89,7 +99,12 @@ More Features:
 
 
 ## Unfixed Bugs:
-* Confirmation Emails - Since I used the same version of Django as in the walkthrough (Django > 4) Email functionality don’t seem to be supported. I spent hours trying to migrate/update the version of Django but because that resulted in new errors and problems I left it as an unfixed bug. I also contacted Student Care regarding this and did not get a clear answer on how to handle this.
+* Confirmation Emails - Since I used the same version of Django as in the walkthrough (Django > 4) Email functionality don’t seem to be supported. I spent hours trying to migrate/update the version of Django but because that resulted in new errors and problems I left it as an unfixed bug. I also contacted Student Care regarding this and did not get a clear answer on how to handle this. Might be worth mentioning that the code to accomplish this email functionality is there and the emails is getting logged in the terminal while in DEVELOPMENT.
+
+![Emails getting logged ScreenShot](media/readme-images/email-screenshot.png)
+
+* Validation Error - This error occures because of a duplication of an Id that generates with CrispyForms that I cannot affect
+    ![W3 Screenshot of validation  error - HTML](media/readme-images/validator-error.png)
 
 ## Deployment: 
 

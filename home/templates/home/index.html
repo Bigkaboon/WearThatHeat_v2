@@ -13,7 +13,7 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div style="margin-left: auto;margin-right: auto;margin-top: 15llrem;" class="">
+            <div class="move-shop-now">
                 <div class="my-5">
                     <h4 >
                         <a href="{% url 'products' %}" id="edit-shopNowBtn" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
@@ -33,7 +33,7 @@
             <hr>
         </div>
         {% for product in page_obj %}
-        <div id="set-card-width" class="col-sm-6 col-md-6 col-lg-4 col-xl-3 shadow-orange">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 new-shadow-orange">
             <div class="card h-100 border-1">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
