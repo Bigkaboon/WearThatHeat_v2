@@ -289,6 +289,8 @@ set-border {
     color: #555;
 }
 
+
+
 /* ------------------- Footer */
 
 footer {
@@ -327,10 +329,6 @@ footer > span {
   .container {
     max-width: 80%;
   }
-
-}
-
-@media (max-width: 1200px) {
 
 }
   
@@ -393,7 +391,10 @@ footer > span {
         margin-top: 3rem;
     }
 
-
+    .message-container {
+        margin-top: 10rem;
+    }
+    
 
 }
 @media (max-width: 991px) {
