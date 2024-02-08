@@ -144,3 +144,8 @@ More Features:
 * Pants, Shoes And Jackets - The pictures is taken from google with commercial license toggled on since the owner of WearThatHeat(Wiktor) did not provide me with that and I thought I needed at least one product of each category.
 
 * Open AI - To generate product description I described the product for ChatGPT and asked for a suitable description.
+
+* Facebook - I have created a Business Facebook for the website, since WearThatHeat exists in real life I didnt want to use that name for the facebook so that the owner could create one for himself without me removing this one.
+
+![Screenshot of WearThatHeat Facebook Page](media/readme-images/wth-facebook.png)
+
