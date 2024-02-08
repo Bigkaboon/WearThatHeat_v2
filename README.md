@@ -1,6 +1,8 @@
 # WearThatHeat
 
-Are you looking for a Swedish based marketplace where you can buy authentic cloths from a great variation of popular brands, WearThatHeat is the place for you. In first sight you see all the new arrived products displayed on the homepage that you can with ease select and take a closer look to then decide if you would like to buy. Besides that, you as a user can browse between all the different clothing in one single tab. To make it easier for users to find the product they are looking for I have implemented several ways to sort products. For the purpose of finding something they know are in stock users can use the searchbar at the top, other sorting methods like price or a specific type of clothing exists aswell. WearThatHeat is even more friendly when it comes to administration, more info regarding that further down.
+Are you looking for a Swedish based marketplace where you can buy authentic cloths from a great variation of popular brands, [WearThatHeat](https://wear-that-heat-c81d8db45882.herokuapp.com/?page=1) is the place for you. In first sight you see all the new arrived products displayed on the homepage that you can with ease select and take a closer look to then decide if you would like to buy. Besides that, you as a user can browse between all the different clothing in one single tab. To make it easier for users to find the product they are looking for I have implemented several ways to sort products. For the purpose of finding something they know are in stock users can use the searchbar at the top, other sorting methods like price or a specific type of clothing exists aswell. WearThatHeat is even more friendly when it comes to administration, more info regarding that further down.
+
+Incase you missed the link, visit WearThatHeat --> [HERE](https://wear-that-heat-c81d8db45882.herokuapp.com/?page=1)
 
 ## Features:
 
