@@ -138,3 +138,9 @@ More Features:
 ### A Great Thanks!
 
 * My Mentor Antonio and Tutor support who got my back when I needed some extra guidance
+
+## Other Info
+
+* Pants, Shoes And Jackets - The pictures is taken from google with commercial license toggled on since the owner of WearThatHeat(Wiktor) did not provide me with that and I thought I needed at least one product of each category.
+
+* Open AI - To generate product description I described the product for ChatGPT and asked for a suitable description.
