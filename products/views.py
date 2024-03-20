@@ -6,7 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 
-from .models import Product, Category
+from .models import Product, Category, Outfit
 from .forms import ProductForm
 
 # Create your views here.
@@ -77,6 +77,15 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+def all_outfits(request, outfits):
+    outfits = Outfit.objects.all()
+
+    context = {
+        'outfits': outfits,
+    }
+
+    return render(request, 'products/outfits.html', context)
 
 @login_required
 def add_product(request):
