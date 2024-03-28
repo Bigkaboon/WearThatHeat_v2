@@ -304,6 +304,12 @@ set-border {
     padding: 1rem;
 }
 
+.outfit-image {
+    max-width: 130px;
+    max-height: 260px;
+}
+
+
 
 
 
