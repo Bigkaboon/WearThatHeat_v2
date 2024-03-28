@@ -78,11 +78,18 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-def all_outfits(request, outfits):
+def all_outfits(request):
     outfits = Outfit.objects.all()
+    products = Product.objects.all()
+   
+
+    if request.GET:
+        for products in outfits:
+            return products
 
     context = {
         'outfits': outfits,
+        'products': products,
     }
 
     return render(request, 'products/outfits.html', context)
