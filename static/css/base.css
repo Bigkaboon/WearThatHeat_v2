@@ -305,9 +305,16 @@ set-border {
 }
 
 .outfit-image {
-    max-width: 130px;
-    max-height: 260px;
+    width: 130px;
+    height: 160px;
+
 }
+
+.display-outfit {
+    margin: 2rem 1rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
 
 
 

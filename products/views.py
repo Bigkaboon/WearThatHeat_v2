@@ -81,7 +81,6 @@ def product_detail(request, product_id):
 def all_outfits(request):
     outfits = Outfit.objects.all()
     products = Product.objects.all()
-   
 
     if request.GET:
         for products in outfits:
