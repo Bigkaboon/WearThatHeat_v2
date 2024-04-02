@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://wear-that-heat-c81d8db45882.herokuapp.com/sitemap.xml
