@@ -547,4 +547,11 @@ footer > span {
     .hide-sm {
         display: none;
     }
+
+    .error-pages {
+        max-width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+    }
 }
