@@ -46,6 +46,7 @@
                                 <span class="text-uppercase">All Products</span>
                             </a>
                             <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                            <a class="text-danger" href="{% url 'delete_outfit' outfit.id%}">Delete</a>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <input type="hidden" name="quantity" value="1">

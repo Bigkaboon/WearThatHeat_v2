@@ -7,7 +7,7 @@ from django.db.models.functions import Lower
 
 
 from .models import Product, Category, Outfit
-from .forms import ProductForm
+from .forms import ProductForm, OutfitForm
 
 # Create your views here.
 
@@ -92,6 +92,43 @@ def all_outfits(request):
     }
 
     return render(request, 'products/outfits.html', context)
+
+@login_required
+def add_outfit(request):
+    """ Add a outfit to the store """
+    if not request.user.is_superuser:
+        message.error(request, 'Sorry only store owner can do that!')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = OutfitForm(request.POST, request.FILES)
+        if form.is_valid():
+            Outfit = form.save()
+            messages.success(request, 'Successfully added outfit!')
+            return redirect(reverse('outfits'))
+        else:
+            messages.error(request, 'Failed to add outfit. Please ensure the form is valid.')
+    else:
+        form = OutfitForm()
+        
+    template = 'products/add_outfit.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+@login_required
+def delete_outfit(request, outfit_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        message.error(request, 'Sorry only store owner can do that!')
+        return redirect(reverse('home'))
+
+    outfit = get_object_or_404(Outfit, pk=outfit_id)
+    outfit.delete()
+    messages.success(request, 'Outfit deleted!')
+    return redirect(reverse('outfits'))
 
 @login_required
 def add_product(request):

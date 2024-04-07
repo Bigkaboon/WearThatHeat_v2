@@ -513,6 +513,10 @@ footer > span {
         margin-right: auto;
         margin-top: 6rem;
     }
+
+    .footer-fix {
+        padding-bottom: 4rem;
+    }
 }
 
 @media (max-width: 663px) {
