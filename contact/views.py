@@ -58,7 +58,7 @@ class ContactUs(View):
                 subject,
                 message,
                 settings.DEFAULT_FROM_EMAIL,
-                [cust_email]
+                #[cust_email]
             )
 
             contact_form.save()
