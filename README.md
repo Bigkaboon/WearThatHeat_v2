@@ -143,6 +143,32 @@ Here is a few WireFrames made with Balsamiq
 13. Add the deployed url to you ALLOWED_HOSTS in settings.py.
 14. When connected Heroku to GitHub, choose automatic deploys and deploy app.
 
+## Business Model
+WearThatHeat sells clothes to directly to people which makes it a buisnesss to consumer (B2C) Business Model. WearThatHeat sells relatively rare and pricey clothes which makes it hard to sell directly to businesses. This is why WearThatHeat's business model is B2C.
+
+## Marketing Strategy
+
+When it comes to Market Strategy, WearThatHeat has mainly focused on social media since that is where it all started, with a growing customer base, and entertaining posts the only thing left to implement is Search Engine Optimization (SEO). How that has been implemented can you read about below.
+
+### SEO
+
+* Topics and Keywords - I sat down and figuered out a couple of suitable Topics and then as many keywords I possibly could come up with and then removing the one's I thought were most popular in order to minimize the compition for them.
+* Semantic Elements - I have tried to make as good use of semantic elements as I can, putting keywords in < strong > tags 
+* Relevant links - In a section of the home page called "brands we sell", I have linked to brands that wearthatheat usually sells from.
+* Name on images - Including the brand name in the images in combination with the name of the garment.
+* Head element - in the Meta tags in the head element I have included keywords and a description that make use of a few of those keywords aswell.
+
+### Social Media
+* Facebook - I have created a Business Facebook for the website, since WearThatHeat exists in real life I didnt want to use that name for the facebook so that the owner could create one for himself without me removing this one.
+
+![Screenshot of WearThatHeat Facebook Page](media/readme-images/wth-facebook.png)
+
+* Instagram / TikTok - The founder of WearThatHeat is active on social media. Especially Instagram and Tiktok where he post updated stock, fun unboxing videos and so on. Unfortunately I do not have acces to those social media platforms but you can find the links to them below.
+
+[WearThatHeat - Instagram](https://www.instagram.com/wearthatheat/)
+
+[WearThatHeat - TikTok](https://www.tiktok.com/@wearthatheat)
+
 ## Credits
 
 ### Content
@@ -164,8 +190,3 @@ Here is a few WireFrames made with Balsamiq
 * Pants, Shoes And Jackets - The pictures is taken from google with commercial license toggled on since the owner of WearThatHeat(Wiktor) did not provide me with that and I thought I needed at least one product of each category.
 
 * Open AI - To generate product description I described the product for ChatGPT and asked for a suitable description.
-
-* Facebook - I have created a Business Facebook for the website, since WearThatHeat exists in real life I didnt want to use that name for the facebook so that the owner could create one for himself without me removing this one.
-
-![Screenshot of WearThatHeat Facebook Page](media/readme-images/wth-facebook.png)
-
