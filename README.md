@@ -94,6 +94,24 @@ More Features:
     ![JSHint Screenshot of validation - JavaScript](media/readme-images/jshint-validator.png)
 
 
+## Design
+
+Since WearThatHeat is a real life buisness with determined color scheem and logo I had a few things to build upon since start.
+
+Here is a few WireFrames made with Balsamiq
+
+* Home Page
+
+    ![WireFrame of Home Page](media/readme-images/wirefram_Home.png.png)
+
+* Products Page
+
+    ![WireFrame of Products Page](media/readme-images/wirefram_products.png.png)
+
+* Bag Page
+
+    ![WireFrame of Bag Page](media/readme-images/wirefram_Bag.png.png)
+
 ## Manual Testing:
 * Using - I have used the site, tried every feature multiple times to make sure everything works as it should without problems.
 
