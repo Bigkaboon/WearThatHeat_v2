@@ -131,6 +131,34 @@ def delete_outfit(request, outfit_id):
     return redirect(reverse('outfits'))
 
 @login_required
+def edit_outfit(request, outfit_id):
+    """ Edit a product in the store """
+    if not request.user.is_superuser:
+        message.error(request, 'Sorry only store owner can do that!')
+        return redirect(reverse('home'))
+
+    outfit = get_object_or_404(Outfit, pk=outfit_id)
+    if request.method == 'POST':
+        form = OutfitForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated Outfit!')
+            return redirect(reverse('outfits'))
+        else:
+            messages.error(request, 'Failed to update outfit. Please ensure the form is valid.')
+    else:
+        form = OutfitForm(instance=outfit)
+        messages.info(request, f'You are editing {outfit.name}')
+
+    template = 'products/edit_outfit.html'
+    context = {
+        'form': form,
+        'outfit': outfit,
+    }
+
+    return render(request, template, context)
+
+@login_required
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
