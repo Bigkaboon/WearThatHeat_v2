@@ -216,7 +216,7 @@ body {
 
 .display-new-items {
     background-color: white;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
     padding: 1rem;
     border: 0.1rem solid black;
     display: flex;
@@ -353,6 +353,35 @@ footer > span {
 
 .footer-fix {
     margin-bottom: 6rem;
+}
+
+.related-brands {
+    margin-bottom: 3rem;
+    min-height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+}
+
+.display-brands {
+    background-color: white;
+    margin-bottom: 7rem;
+    padding-top: 2rem;
+}
+
+.related-brands-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.body > * {
+    max-width: 100vw;
+}
+
+.brand-logo {
+    max-width: 60px;
+    max-height: 120px;
 }
 
 
