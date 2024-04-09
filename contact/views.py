@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.core.mail import send_mail
@@ -8,9 +8,43 @@ from django.views import generic, View
 from django.conf import settings
 from django.template.loader import render_to_string
 from django.urls import reverse_lazy
-from .forms import ContactForm
-from .models import Contact
+from .forms import ContactForm, NewsLetterForm
+from .models import Contact, NewsLetter
 
+
+class NewsLetter(View):
+
+    def get(self, request):
+
+        if request.user.is_authenticated:
+            form = NewsLetterForm(initial={'email': request.user.email})
+        else:
+            form = NewsLetterForm()
+
+        template = 'contact/newsletter.html'
+        context = {
+            'newsletter_form': form,
+        }
+
+        return render(request, template, context)
+
+    
+    def post(self, request):
+
+        newsletter_form = NewsLetterForm(data=request.POST)
+
+        if newsletter_form.is_valid():
+            newsletter_form.save()
+            messages.success(request, 'Successfully signed up for News Letters!')
+            return redirect('home')
+
+            NewsLetterForm.save()
+            messages.success(self.request, 'Success! Signed up for news letter')
+
+            target = "home/index.html"
+            context = {"plain_message": True}
+
+        return render(request, target, context)
 
 class ContactUs(View):
     """

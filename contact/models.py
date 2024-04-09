@@ -33,3 +33,8 @@ class Contact(models.Model):
 
     def __str__(self):
         return f"Enquiry: {self.enquiry_type} from {self.name}"
+
+class NewsLetter(models.Model):
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    def __str__(self):
+        return self.name

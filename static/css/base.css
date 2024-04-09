@@ -319,6 +319,12 @@ set-border {
     padding: 2rem;
 }
 
+.news-letter {
+    
+    font-size: 00.75rem;
+
+}
+
 /* ------------------- Footer */
 
 footer {
@@ -356,6 +362,10 @@ footer > span {
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
+  }
+
+  .hide {
+    display: none;
   }
 
 }

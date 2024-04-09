@@ -12,4 +12,5 @@ urlpatterns = [
         'enquiries/delete/<int:pk>/', views.DeleteEnquiry.as_view(),
         name='delete_enquiry'
         ),
+    path('newsletter/', views.NewsLetter.as_view(), name='newsletter'),
 ]
