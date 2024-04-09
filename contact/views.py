@@ -37,10 +37,6 @@ class NewsLetter(View):
             newsletter_form.save()
             messages.success(request, 'Successfully signed up for News Letters!')
             return redirect('home')
-
-            NewsLetterForm.save()
-            messages.success(self.request, 'Success! Signed up for news letter')
-
             target = "home/index.html"
             context = {"plain_message": True}
 
