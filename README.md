@@ -142,6 +142,12 @@ We have tried many things, changing emails, creating new app passwords, changes 
 ## Unfixed Bugs:
 * Confirmation Emails - Since I used the same version of Django as in the walkthrough (Django > 4) Email functionality don’t seem to be supported. I spent hours trying to migrate/update the version of Django but because that resulted in new errors and problems I left it as an unfixed bug. I also contacted Student Care regarding this and did not get a clear answer on how to handle this. Might be worth mentioning that the code to accomplish this email functionality is there and the emails is getting logged in the terminal while in DEVELOPMENT.
 
+This is also the reason why NewsLetter and confirmation emails for contact cannot be sent, when trying this functionality in development you can both see that the confirmation mail is sent in the console and it gets logged in the data base, not in the Deployed version because of this code snippet: 
+
+![Code snippet for Email Backend](media/readme-images/Email-codesnippet-settings.png)
+
+* Emails Printed in Console:
+
 ![Emails getting logged ScreenShot](media/readme-images/email-screenshot.png)
 
 * Validation Error - This error occures because of a duplication of an Id that generates with CrispyForms that I cannot affect
