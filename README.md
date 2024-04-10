@@ -115,7 +115,28 @@ Here is a few WireFrames made with Balsamiq
 ## Manual Testing:
 * Using - I have used the site, tried every feature multiple times to make sure everything works as it should without problems.
 
-* Friends and Family - I have asked friends and family to try it out aswell and asked for feedback. Functionality wise they found that categories was not displayed properly and that is now fixed.
+* Friends and Family - I have asked friends and family to try it out aswell and asked for feedback. Functionality wise they found that categories was not displayed properly and that is now fixed. I have noticed that many times when you code, trying to make the site responsive and you use certain dimensions and on it looks good on your screen wont allways mean that it look that way on your phone. That is why I have asked friends and family to visit the site.
+
+### Expected outcome: 
+The site is responsive on phone and elements is not collapsing with each other or look off.
+
+### Actual Outcome: 
+The more screensizes we have tried the more issues have appeared. Ofcourse you could change all the styles as you see the issues, I think a more effective way is to have this in mind from the beggining, work more with percentage, mobile view first and decide which elements should be hidden on which dimensions and so on. I have handled the outcome of the testing as I first said, fixing the issues as they appeared since I have mainly worked with three different dimensions I thought this was the most effective way in comperhension to reworking all the style.
+
+One way to test the style on your phone is making the workspace public and sending the link to your phone. That way can you see directly if the outcome is what you have expected.
+
+## Python testing
+I have not done much automated testing. Alltho plenty of debugging has been done when things don't work as expected.
+
+### Expected outcome: 
+With one little change each time the expected outcome is mostly for the problem to be solved untill it is.
+
+### Actual Outcome: 
+Mostly the problem or error has been solved but sometimes, i. e Sending out confirmation Emails never worked, With help from resources Code Institute provides the outcome were that the emails gets printed in the console, not actually gets sent out to the user. When Debug is true you can see that is an SMTP error that missing a keyfile. After twisting and turning the code in plenty of ways together with Tutor Support and especially my mentor we concluded that the problem lies with the Versions of Django and python not working together and changeing/updating the other could cause more problem than it solves.
+
+### Debugging
+We have tried many things, changing emails, creating new app passwords, changes in the code TLS = False, linked the repository to a new app on heroku, compaired the code with other projects. We even uppdated to a later version of Django but once we did it seemed like more errors occured.
+
 
 
 ## Unfixed Bugs:
