@@ -164,6 +164,8 @@ body {
     height: 2px;
 }
 
+
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -361,6 +363,7 @@ footer > span {
     display: flex;
     justify-content: space-between;
     padding: 0 7rem;
+    max-width: 1600px;
 }
 
 .display-brands {
@@ -398,7 +401,19 @@ footer > span {
   }
 
 }
-  
+
+@media (max-width: 1200px) {
+
+    .related-brands img{
+        max-height: 170px;
+        max-width: 130px;
+        margin-right: 2rem;
+    
+    }
+
+}
+
+
 
 .btn-file {
     position: relative;
@@ -468,6 +483,27 @@ footer > span {
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
+    }
+
+    .related-brands img{
+        max-height: 90px;
+        max-width: 70px;
+        margin-right: 2rem;
+
+    }
+
+    .related-brands {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .outfit-image {
+        max-width: 50px;
+        max-height: 70px;
+    }
+
+    #signup_form {
+        padding-bottom: 10rem;
     }
 
     .fixed-top-desktop-only {
