@@ -139,7 +139,7 @@ def edit_outfit(request, outfit_id):
 
     outfit = get_object_or_404(Outfit, pk=outfit_id)
     if request.method == 'POST':
-        form = OutfitForm(request.POST, request.FILES, instance=product)
+        form = OutfitForm(request.POST, request.FILES, instance=outfit)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated Outfit!')
