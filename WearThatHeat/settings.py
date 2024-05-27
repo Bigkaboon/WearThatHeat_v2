@@ -28,7 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+#DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheatv-db53qlfcq7t.ws-eu114.gitpod.io', 'wear-that-heat-c81d8db45882.herokuapp.com', 'localhost', 'pp5-dexter-2c20a5d50b17.herokuapp.com']
