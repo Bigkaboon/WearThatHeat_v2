@@ -4,6 +4,7 @@ from django.core.paginator import Paginator
 
 # Create your views here.
 
+
 def index(request):
 
     new_arrivals = Product.objects.filter(category__name='new_arrivals')
@@ -19,6 +20,3 @@ def index(request):
     }
 
     return render(request, 'home/index.html', context)
-
-
-

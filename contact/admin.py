@@ -11,6 +11,7 @@ class ContactAdmin(admin.ModelAdmin):
         'date',
     )
 
+
 class NewsLetterAdmin(admin.ModelAdmin):
     """Allows admin to view who signed up for news letter"""
     list_display = (

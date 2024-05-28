@@ -31,8 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 
-
-ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheatv-db53qlfcq7t.ws-eu114.gitpod.io', 'wear-that-heat-c81d8db45882.herokuapp.com', 'localhost', 'pp5-dexter-2c20a5d50b17.herokuapp.com']
+ALLOWED_HOSTS = ['8000-bigkaboon-wearthatheatv-xw2p5lmhl0p.ws-eu114.gitpod.io',
+                 'wear-that-heat-c81d8db45882.herokuapp.com',
+                 'localhost', 'pp5-dexter-2c20a5d50b17.herokuapp.com']
 
 
 # Application definition
@@ -86,7 +87,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth', 
+                'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
@@ -143,16 +144,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 

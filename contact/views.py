@@ -28,19 +28,20 @@ class NewsLetter(View):
 
         return render(request, template, context)
 
-    
     def post(self, request):
 
         newsletter_form = NewsLetterForm(data=request.POST)
 
         if newsletter_form.is_valid():
             newsletter_form.save()
-            messages.success(request, 'Successfully signed up for News Letters!')
+            messages.success(request,
+                             'Successfully signed up for News Letters!')
             return redirect('home')
             target = "home/index.html"
             context = {"plain_message": True}
 
         return render(request, target, context)
+
 
 class ContactUs(View):
     """
