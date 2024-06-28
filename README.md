@@ -125,6 +125,13 @@ The more screensizes we have tried the more issues have appeared. Ofcourse you c
 
 One way to test the style on your phone is making the workspace public and sending the link to your phone. That way can you see directly if the outcome is what you have expected.
 
+### User Story Testing:
+I have tested my user stories by putting myself in the perspective relevant to the story itself (User and Admin/Owner). Here are three examples:
+
+* Register/SignUp: Testing this is prety straight forward. After creating the functionality I tried to register an account which worked. In order to make sure the functionality works proporly I visited the admin panel to control the account is saved in the data base.
+* Product Detail: Once Product Detail page is created as described in the user story it's time to test wether it works proporly or not. The way I did this is clicking on products where they appear throughout the site and make sure Product Details page opens where it's suppose to without any errors.
+* Create Outfit: After creating the functionality itself I went through a few steps when testing. Firstly I needed to make sure you could create the outfit in the data base via the admin panel, which worked well. The secound step was to make sure it was possible to create an outfit within the site itself without errors. This is also prety straight forward, after creating all the necessary pages the only thing left to do is create an outfit. Creating it worked well, it got saved in the data base. It was a probelm though, when displaying the outfits it sometimes caused the site to show a 500 error. After debuging I could see that Outfit was missing an argument (Image). This is because the Outfit class inherits from Product which requires an image. I fixed this by removing the requirement of an image from Outfit.
+
 ## Python testing
 I have not done much automated testing. Alltho plenty of debugging has been done when things don't work as expected.
 
