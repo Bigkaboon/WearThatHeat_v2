@@ -126,7 +126,7 @@ The more screensizes we have tried the more issues have appeared. Ofcourse you c
 One way to test the style on your phone is making the workspace public and sending the link to your phone. That way can you see directly if the outcome is what you have expected.
 
 ### User Story Testing:
-I have tested my user stories by putting myself in the perspective relevant to the story itself (User and Admin/Owner). Here are three examples:
+Through out the working process I have worked with user stories (that earlier where set to private in github) to have clear goals and step by step add the functionality needed. I have tested theese user stories by putting myself in the perspective relevant to the story itself (User and Admin/Owner). Here are three examples:
 
 * Register/SignUp: Testing this is prety straight forward. After creating the functionality I tried to register an account which worked. In order to make sure the functionality works proporly I visited the admin panel to control the account is saved in the data base.
 * Product Detail: Once Product Detail page is created as described in the user story it's time to test wether it works proporly or not. The way I did this is clicking on products where they appear throughout the site and make sure Product Details page opens where it's suppose to without any errors.
@@ -224,3 +224,5 @@ When it comes to Market Strategy, WearThatHeat has mainly focused on social medi
 * Pants, Shoes And Jackets - The pictures is taken from google with commercial license toggled on since the owner of WearThatHeat(Wiktor) did not provide me with that and I thought I needed at least one product of each category.
 
 * Open AI - To generate product description I described the product for ChatGPT and asked for a suitable description.
+
+* There is a couple of errors occuring when validating the forms.py, in order to keep the style on the forms without to much complication I have chosen to keep the lines too long. The same is in widgets.py when I have to set template_name to a specific path and cannot shorten it down.
